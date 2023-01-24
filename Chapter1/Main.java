@@ -1,3 +1,5 @@
+// 内部クラスの使い方
+
 // 外部クラス
 class OuterClass {
     private String str = "OuterClassの変数";
