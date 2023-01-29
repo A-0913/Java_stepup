@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
+// TreeMapを生成する場合に記述
+// import java.util.TreeMap;
 
 public class Main2 {
 	public static void main(String[] args) {
@@ -9,9 +10,9 @@ public class Main2 {
     // Map<キーのデータ型, 値のデータ型> マップ名 = new HashMap<>();
     Map<Integer, String> map1 = new HashMap<Integer, String>();
 
-    // TreeMapを生成する場合
+    // TreeMapを生成する場合に記述
     // Map<キーのデータ型, 値のデータ型> マップ名 = new HashMap<>();
-    Map<String, String> map2 = new TreeMap<String, String>();
+    // Map<String, String> map2 = new TreeMap<String, String>();
 
     // キー0に「ぶどう」を追加する
     map1.put(0, "ぶどう");
