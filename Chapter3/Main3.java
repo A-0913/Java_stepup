@@ -34,7 +34,7 @@ public class Main3 {
     System.out.println(set1.size());
     // 出力結果:2
 
-    // キーを削除する
+    // 要素「スイカ」を削除する
     set1.remove("スイカ");
     set1.remove("なし"); // 何もしない
 
