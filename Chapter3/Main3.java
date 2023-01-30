@@ -1,7 +1,7 @@
 import java.util.HashSet;
-import java.util.LinkedHashSet;
+// LinkedHashSetを生成する場合に記述
+// import java.util.LinkedHashSet;
 import java.util.Set;
-// TreeMapを生成する場合に記述
 
 public class Main3 {
 	public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class Main3 {
     // set(インデックス番号,置き換えたい値) = new HashSet<String>();
     Set<String> set1 = new HashSet<String>();
 
-    // LinkedHashSetを生成する場合
+    // LinkedHashSetを生成する場合に記述
     // set(インデックス番号,置き換えたい値) = new LinkedHashSet<Integer>();
     // Set<Integer> set2 = new LinkedHashSet<Integer>();
 
