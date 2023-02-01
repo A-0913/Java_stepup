@@ -10,6 +10,8 @@ public class Chapter14 {
         party.add(new Soldier());
         party.add(new Playboy());
 
+        // クラスメソッド:クラス全体に関わる処理を記述
+        // クラス名.クラスメソッド (引数);
         Chapter14.partyAttack(party);
     }
 
