@@ -5,8 +5,10 @@ public class Test2 {
 			@Override
 			public void write1() {
 				System.out.println("黄");
+				//"System.out.println("赤");"から"System.out.println("黄");"にオーバーライト
 			}
-		}.write1(); //黄
+		}.write1();
+		//出力結果:黄
 	}
 }
 
@@ -24,10 +26,10 @@ public class Test2 {
  		  メソッドの処理
 		}.メソッド名();
 
+    もしくは、
+
 		変数の型 変数 = new クラス名 or インターフェース名() {
 		  メソッドの処理
 		};
 		変数.メソッド名();
-
-
 */
