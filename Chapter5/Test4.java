@@ -4,17 +4,21 @@ public class Test4 {
 		new Color2() {
 			@Override
 			public void write5() {
+				// Color2インターフェースの抽象メソッドをオーバーライト
 				System.out.println("青");
 			}
-		}.write5(); //青
+		}.write5();
+		//出力結果:青
 
 		Color2 c1 = new Color2() {
 			@Override
 			public void write5() {
+				// Color2インターフェースの抽象メソッドをオーバーライト
 				System.out.println("青");
 			}
 		};
-		c1.write5(); //青
+		c1.write5();
+		//出力結果:青
 
 	}
 }
