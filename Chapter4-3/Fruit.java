@@ -5,15 +5,16 @@ abstract class Fruit {
   String name;
   BigDecimal price;
 
+  // Fruitクラスのコンストラクタを定義
   Fruit(String name, BigDecimal price) {
     this.name = name;
     this.price = price;
   }
 
   abstract protected String getName();
-  // 抽象メソッド
+  // Fruitクラスの抽象メソッド
   abstract protected BigDecimal getPrice();
-  // 抽象メソッド
+  // Fruitクラスの抽象メソッド
 
 
   /* 《//抽象メソッドとアクセス修飾子》
