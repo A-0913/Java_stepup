@@ -19,31 +19,39 @@ public class Main {
 		fruits.add(new Fruit("メロン", 8));
 		fruits.add(new Fruit("ぶどう", 20));
 
-		// 在庫数が10個以下に絞り込まれた要素を入れるfilteredリストを作る
+		// filteredリストを作る
 		List<Fruit> filtered = new ArrayList<>();
 		// 拡張for文でfruitsをループ
 		for (Fruit fruit : fruits) {
-		  // if文で10個以下に絞る
-		  // getQuantity():Fruit.javaで設定されたメソッド。在庫数を返す。
+		  // getQuantity():Fruit.javaで設定されたメソッド。
+		  // if文で在庫数が10個以下のフルーツを絞る。
 		  if (fruit.getQuantity() <= 10) {
-		    // 絞り込まれたリストに追加
+		    // if文に該当するフルーツをリストに追加
 		    filtered.add(fruit);
 		  }
 		}
-		// 20個ずつ追加する
+		// orderedリストを作る
 		List<Fruit> ordered = new ArrayList<>();
+		// 拡張for文:配列やコレクションの全要素に対して、繰り返し処理を行なう制御文
 		for (Fruit fruit : filtered) {
+			// 在庫数を20個増やしたフルーツをリストに追加する
 		  ordered.add(fruit.order(20));
 		}
-		// 個数が少ない順に並べ替える
+		// orderedリストをComparatorの戻り値の小さい順に並べ替える
+		// sortメソッド:配列を昇順にソートする
+		// 無名クラスでComparatorを作成
 		ordered.sort(new Comparator<Fruit>() {
 		  @Override
 		  public int compare(Fruit f1, Fruit f2) {
 		    return f1.getQuantity() - f2.getQuantity();
+		    /* compareメソッド
+		    	 順序付けのために2つの引数を比較する。
+		    	 最初の引数が2番目の引数より小さい場合は負の整数、両方が等しい場合は0、
+		    	 最初の引数が2番目の引数より大きい場合は正の整数を返す。*/
 		  }
 		});
 
-		// 絞り込んで並べ替えたリストを拡張for文でループしながら出力する
+		// 絞り込んで並べ替えたorderedリストを拡張for文でループしながら出力する
 		for (Fruit fruit : ordered) {
 		  // 標準出力
 		  System.out.println(fruit);
